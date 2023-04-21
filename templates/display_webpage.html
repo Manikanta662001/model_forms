@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <center>
+        <h1>Displaying_Webpage details</h1>
+        <table border="4px">
+            <tr>
+                <th>Topic_name</th>
+                <th>Name</th>
+                <th>URL</th>
+                <th>EMAIL</th>
+            </tr>
+            {% for i in WO %}
+            <tr>
+                <td>{{i.topic_name}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.url}}</td>
+                <td>{{i.email}}</td>
+                
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

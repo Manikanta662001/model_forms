@@ -1,0 +1,16 @@
+h1
+{
+    color: blue;
+    background-color: yellow;
+}
+body
+{
+    background-color: fuchsia;
+}  
+label
+{
+    color: springgreen;
+} 
+input{
+    color: green;
+}
