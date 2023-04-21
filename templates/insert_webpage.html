@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Inserting data by Model Forms</h1>
+        <form method="POST">
+            {% csrf_token %}
+
+            {{Wo.as_p}}
+            <input type="submit" value="Insert Webpage">
+        </form>
+    </center>
+</body>
+</html>
